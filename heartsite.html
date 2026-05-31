@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .heart-container {
+            text-align: center;
+        }
+        .heart {
+            position: relative;
+            width: 100px;
+            height: 90px;
+            margin: 0 auto 20px;
+        }
+        .heart:before,
+        .heart:after {
+            content: '';
+            width: 52px;
+            height: 80px;
+            position: absolute;
+            left: 50px;
+            transform: rotate(-45deg);
+            background: #e74c3c;
+            border-radius: 50px 50px 0 0;
+            transform-origin: 0 100%;
+        }
+        .heart:after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+        h1 {
+            color: #333;
+            margin: 0;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="heart-container">
+        <div class="heart"></div>
+        <h1>Love at First Sight</h1>
+    </div>
+</body>
+</html>
